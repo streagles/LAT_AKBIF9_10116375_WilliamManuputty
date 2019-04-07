@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lat_akbif9_10116375_williammanuputty.MainActivity2"
+    android:background="#f8f8f8">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Kode Keluarga"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:layout_below="@id/relative"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ketikan kode keluarga yang Ayah Bunda \nMiliki disini"
+            android:textColor="#202020"
+            android:fontFamily="@font/rubik_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_below="@id/linear1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="126dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="321dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/roundededitext"
+            android:fontFamily="@font/rubik_regular"
+            android:text="AIB2C3"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/kata"
+            android:textAlignment="center"
+            android:textColor="#202020" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/linear2"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundbutton"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="#202020"
+            android:onClick="button2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_shadow">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Belum Punya Kode Keluarga?"
+            android:textColor="#202020"
+            />
+
+        <Button
+            android:layout_width="345dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundbutton1"
+            android:text="Beli Kartu Keluarga Disini"
+            android:textColor="#f8f8f8" />
+    </RelativeLayout>
+
+</RelativeLayout>
